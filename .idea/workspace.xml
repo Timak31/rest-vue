@@ -108,8 +108,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="352" />
-    <option name="y" value="98" />
+    <option name="x" value="185" />
+    <option name="y" value="60" />
     <option name="width" value="1568" />
     <option name="height" value="982" />
   </component>
@@ -213,6 +213,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -239,14 +240,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.LetscodeRestVueApplication (1)">
     <configuration name="LetscodeRestVueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="letscode-rest-vue.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timak31.letscoderestvue.LetscodeRestVueApplication" />
+      <module name="rest-vue.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timak31.letscoderestvue.RestVueApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestVueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rest-vue.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timak31.letscoderestvue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timak31.letscoderestvue.RestVueApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LetscodeRestVueApplication (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
