@@ -91,13 +91,6 @@ Vue.component('messages-list', {
             '<message-row v-for="message in messages" :key="message.id" :message="message" ' +
                 ':editMethod="editMethod" :messages="messages"/>' +
         '</div>',
-    created: function() {
-        messageApi.get().then(result =>
-            result.json().then(data =>
-                data.forEach(message => this.messages.push(message))
-            )
-        )
-    },
     methods: {
         editMethod: function (message) {
             this.message = message;
@@ -107,8 +100,26 @@ Vue.component('messages-list', {
 
 var app = new Vue({
     el: '#app',
-    template: '<messages-list :messages="messages"/>',
+    template:
+        '<div>' +
+            '<div v-if="!profile">Need authorize by <a href="/login">Google</a>!</div>' +
+            '<div v-else>' +
+                '<img :src="profile.userpic" width="100px"/>' +
+                '<div>' +
+                    '<div>{{profile.name}} <a href="/logout">logout</a></div>' +
+                '</div>' +
+                '<messages-list :messages="messages"/>' +
+            '</div>' +
+        '</div>',
     data: {
-        messages: []
+        messages: frontendData.messages,
+        profile: frontendData.profile
+    },
+    created: function() {
+        // messageApi.get().then(result =>
+        //     result.json().then(data =>
+        //         data.forEach(message => this.messages.push(message))
+        //     )
+        // )
     }
 });
