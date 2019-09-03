@@ -1,5 +1,12 @@
 #IDE
-**.idea
+*.idea
+*out
+*gradle
+*.gradle
+
+#Front
+*node_modules
+*yarn.lock
 
 *.DS_Store
 

@@ -1,3 +1,12 @@
+import Vue from 'vue'
+import App from 'pages/App.vue'
+
+new Vue({
+    el: '#app',
+    render: a=> a(App)
+})
+
+/*
 
 function getIndex(list, id) {
     for (var i = 0; i < list.length; i++) {
@@ -99,27 +108,9 @@ Vue.component('messages-list', {
 });
 
 var app = new Vue({
-    el: '#app',
+
     template:
-        '<div>' +
-            '<div v-if="!profile">Need authorize by <a href="/login">Google</a>!</div>' +
-            '<div v-else>' +
-                '<img :src="profile.userpic" width="100px"/>' +
-                '<div>' +
-                    '<div>{{profile.name}} <a href="/logout">logout</a></div>' +
-                '</div>' +
-                '<messages-list :messages="messages"/>' +
-            '</div>' +
-        '</div>',
-    data: {
-        messages: frontendData.messages,
-        profile: frontendData.profile
-    },
-    created: function() {
-        // messageApi.get().then(result =>
-        //     result.json().then(data =>
-        //         data.forEach(message => this.messages.push(message))
-        //     )
-        // )
-    }
+
+
 });
+*/

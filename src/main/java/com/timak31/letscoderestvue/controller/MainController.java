@@ -3,6 +3,7 @@ package com.timak31.letscoderestvue.controller;
 import com.timak31.letscoderestvue.model.User;
 import com.timak31.letscoderestvue.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,12 +14,15 @@ import java.util.HashMap;
 
 @Controller
 @RequestMapping("/")
-public class Main {
+public class MainController {
 
     private final MessageRepository messageRepository;
 
+    @Value("${spring.profile.active}")
+    private String profile;
+
     @Autowired
-    public Main(MessageRepository messageRepository) {
+    public MainController(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
     }
 
@@ -30,6 +34,7 @@ public class Main {
         data.put("messages", messageRepository.findAll());
 
         model.addAttribute("frontendData", data);
+        model.addAttribute("isDevMode", "dev".equals(profile));
         return "index";
     }
 

@@ -1,0 +1,26 @@
+{
+  "name": "rest-vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Timak31/rest-vue.git",
+  "author": "<timlan310398@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-resource": "^1.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
