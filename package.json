@@ -12,7 +12,9 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@stomp/stompjs": "^5.4.2",
     "babel-loader": "^8.0.6",
+    "sockjs-client": "^1.4.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.3",
